@@ -1,6 +1,7 @@
 body {
-    background-color: #151515;
+    background-color: #050505;
     color: #fff;
+    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar {
@@ -10,13 +11,17 @@ body {
     bottom: 0;
 
     padding: 12px;
-    min-width: 300px;
+    min-width: 360px;
+    height: calc(100vh - 24px);
 }
 
 .sidebar__navigation {
     background-color: #181818;
     border-radius: 8px;
-    padding: 16px;
+    height: calc(100% - 32px);
+    padding: 16px 8px;
+
+    overflow-y: auto;
 }
 
 .sidebar__logo {
@@ -26,23 +31,67 @@ body {
 }
 
 .sidebar__logo img {
-    width: 80px;
+    width: 100px;
 }
 
+/* NavRouter */
+
 .sidebar nav ul {
-    padding: 0 20px 10px 20px;
+    padding: 0 0 10px 20px;
     list-style-type: none;
 }
 
 .sidebar ul li {
     text-decoration: none;
-    padding: 10px 0px;
+    padding: 8px 0px;
 }
 
 .sidebar nav ul li a {
-    color: #fff;
+    color: #818181;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    font-family: "DM Sans", sans-serif;
+
+    transition: color 0.25s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ffffff;
+}
+
+.sidebar nav ul li a .sidebar__text {
+    margin-left: 5px;
+}
+
+/* NavPlaylist */
+
+.sidebar__playlist {
+    background-color: #252525;
+    padding: 20px 20px 30px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    gap: 20px;
+
+    font-size: 0.86rem;
+}
+
+.sidebar__playlist h1 {
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.sidebar__playlist h4 {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.sidebar__playlist span {
+    background-color: #fff;
+    color: #151515;
+    font-weight: 800;
+
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
 }
