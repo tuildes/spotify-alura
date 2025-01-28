@@ -2,3 +2,47 @@ body {
     background-color: #151515;
     color: #fff;
 }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    padding: 12px;
+    min-width: 300px;
+}
+
+.sidebar__navigation {
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.sidebar__logo {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.sidebar__logo img {
+    width: 80px;
+}
+
+.sidebar nav ul {
+    padding: 0 20px 10px 20px;
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+}
