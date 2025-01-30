@@ -36,13 +36,13 @@
 </head>
 <body>
     <div class="sidebar">
-        <nav class="sidebar__navigation">
-            <div class="sidebar__logo">
-                <a href="">
-                    <img src="assets/icons/logo-spotify.png" alt="Spotify`s logo">
-                </a>
-            </div>
-            <div>
+        <div class="sidebar__background">
+            <nav class="sidebar__navigation">
+                <div class="sidebar__logo">
+                    <a href="">
+                        <img src="assets/icons/logo-spotify.png" alt="Spotify`s logo">
+                    </a>
+                </div>
                 <ul>
                     <li>
                         <a href="">
@@ -57,18 +57,37 @@
                         </a>
                     </li>
                 </ul>
+            </nav>
+
+            <div class="library">
+                <div class="library__content">
+                    <button class="library__button">
+                        <span class="fa fa-book"></span>
+                        <span>Your Library</span>
+                    </button>
+                    <span class="fa fa-plus"></span>
+                </div>
+
+                <section class="sidebar-playlist">
+                    <div class="sidebar-playlist__content">
+                        <h1>Create your first playlist</h1>
+                        <h4>It`s easy, we`ll help you</h4>
+                        <button>Create Playlist</button>
+                    </div>
+                </section>
+
+                <div class="sidebar-cookies">
+                    <a href="">Cookies</a>
+                </div>
+    
+                <div class="sidebar-language">
+                    <button class="sidebar-language__button">
+                        <span class="fa fa-globe"></span>
+                        <span> English </span>
+                    </button>
+                </div>
             </div>
-            <div class="sidebar__playlist">
-                <h1>Create your first playlist</h1>
-                <h4>It`s easy, we`ll help you</h4>
-                <span>Create Playlist</span>
-            </div>
-            <div class="sidebar__playlist">
-                <h1>Let`s find some podcasts to follow</h1>
-                <h4>We`ll keep you updated on new episodes</h4>
-                <span>Browse podcasts</span>
-            </div>
-        </nav>
+        </div>
     </div>
 
 </body>

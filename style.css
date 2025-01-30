@@ -16,9 +16,14 @@ body {
 }
 
 .sidebar__navigation {
-    background-color: #181818;
     border-radius: 8px;
+    background-color: #151515;
+    margin-bottom: 8px;
+}
+
+.sidebar__background {
     height: calc(100% - 32px);
+    /* background-color: #181818; */
     padding: 16px 8px;
 
     overflow-y: auto;
@@ -65,28 +70,27 @@ body {
 
 /* NavPlaylist */
 
-.sidebar__playlist {
+.sidebar-playlist__content {
     background-color: #252525;
-    padding: 20px 20px 30px 20px;
-    margin-top: 30px;
+    padding: 20px;
     border-radius: 10px;
     gap: 20px;
 
     font-size: 0.86rem;
 }
 
-.sidebar__playlist h1 {
+.sidebar-playlist__content h1 {
     font-weight: 800;
     margin-bottom: 10px;
     font-size: 1rem;
 }
 
-.sidebar__playlist h4 {
+.sidebar-playlist__content h4 {
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.sidebar__playlist span {
+.sidebar-playlist__content button {
     background-color: #fff;
     color: #151515;
     font-weight: 800;
@@ -94,4 +98,86 @@ body {
     padding: 5px 15px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.library {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 8px;
+    font-weight: 600;
+    font-size: 1rem;
+
+    background-color: #151515;
+    border-radius: 8px;
+}
+
+.library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library__button {
+    color: #b3b3b3;
+    background: transparent;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.library__button .fa {
+    font-size: 20px;
+}
+
+.library__content .fa-plus {
+    margin: 24px 10px;
+}
+
+.sidebar-cookies {
+    margin: 25px 10px;
+}
+
+.sidebar-cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.sidebar-cookies a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-language__button {
+    color: #b3b3b3;
+    background: transparent;
+    border: 1px solid #878787;
+    cursor: pointer;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 5px 10px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    transition: transform 0.25s;
+}
+
+.sidebar-language__button:hover {
+    transform: scale(1.025);
 }
