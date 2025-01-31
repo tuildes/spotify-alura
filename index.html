@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Logo -->
-    <link rel="icon" href="assets/icons/favicon.png" />
+    <link rel="icon" href="src/assets/icons/favicon.png" />
     
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <!-- Project CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles/variables.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
+    <link rel="stylesheet" href="src/styles/sidebar.css" />
 
     <!-- Font Awesome -->
     <link 
@@ -40,7 +43,7 @@
             <nav class="sidebar__navigation">
                 <div class="sidebar__logo">
                     <a href="">
-                        <img src="assets/icons/logo-spotify.png" alt="Spotify`s logo">
+                        <img src="src/assets/icons/logo-spotify.png" alt="Spotify`s logo">
                     </a>
                 </div>
                 <ul>
@@ -76,6 +79,14 @@
                     </div>
                 </section>
 
+                <section class="sidebar-playlist">
+                    <div class="sidebar-playlist__content">
+                        <h1>Let's find some podcasts to follow</h1>
+                        <h4>We'll keep you updated on new episodes</h4>
+                        <button>Browse Podcasts</button>
+                    </div>
+                </section>
+
                 <div class="sidebar-cookies">
                     <a href="">Cookies</a>
                 </div>
@@ -89,7 +100,33 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="Left arrow" />
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="Right arrow" />
+                    </button>
+                </div>
+
+                <div class="header__search">
+                    <img src="src/assets/icons/search.png" alt="">
+                    <input id="search-input" maxlength="800" placeholder="What do you want to play?" type="text" />
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Sign up</button>
+                    <button class="login">Login</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer">
         <div class="footer__content">
             <div class="footer__text">
                 <span class="bold">
@@ -103,6 +140,6 @@
                 Sign up free
             </button>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
