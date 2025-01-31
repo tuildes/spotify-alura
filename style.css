@@ -10,9 +10,9 @@ body {
     top: 0;
     bottom: 0;
 
-    padding: 12px;
+    padding: 8px;
     min-width: 360px;
-    height: calc(100vh - 24px);
+    height: calc(100vh - 24px - 80px);
 }
 
 .sidebar__navigation {
@@ -23,9 +23,6 @@ body {
 
 .sidebar__background {
     height: calc(100% - 32px);
-    /* background-color: #181818; */
-    padding: 16px 8px;
-
     overflow-y: auto;
 }
 
@@ -94,6 +91,7 @@ body {
     background-color: #fff;
     color: #151515;
     font-weight: 800;
+    font-family: "DM Sans", sans-serif;
 
     padding: 5px 15px;
     border-radius: 20px;
@@ -180,4 +178,48 @@ body {
 
 .sidebar-language__button:hover {
     transform: scale(1.025);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 8px;
+}
+
+.footer__content {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    border-radius: 4px;
+}
+
+.footer__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer__text .bold {
+    font-weight: 800;
+}
+
+.footer__button {
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    margin-right: 16px;
+    padding: 12px 32px;
+    border-radius: 32px;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
 }
