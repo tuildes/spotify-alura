@@ -9,6 +9,8 @@ button {
 
     max-width: 80vw;
     height: 100vh;
+
+    overflow-y: hidden;
 }
 
 .header__navigation {
@@ -91,6 +93,7 @@ button {
     margin-left: 32px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .header__login .login {
@@ -101,4 +104,69 @@ button {
     font-weight: 700;
     border-radius: 40px;
     margin-left: 16px;
+
+    cursor: pointer;
+}
+
+/* CARD SECITON */
+
+.main__content {
+    padding: 16px;
+    margin: 10px 10px;
+    background-color: #121212;
+    border-radius: 8px;
+    min-height: calc(100% - 220px);
+
+    overflow: auto;
+}
+
+.main__content .main__title {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.main__content .main__library {
+    margin-top: 24px;
+    width: 100%;
+    justify-content: center;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    gap: 30px;
+}
+
+.main__content .main__library .card {
+    width: 200px;
+    height: 200px;
+    background-color: #144c8d65;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.main__content .main__library a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__content .main__library .card span {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.main__content .main__library .card img {
+    height: 75%;
+    aspect-ratio: 1 / 1;
+    transform: rotate(30deg);
+
+    position: relative;
+
+    margin-left: 100px;
+    margin-top: 60px;
 }
