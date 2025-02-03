@@ -8,6 +8,8 @@
     margin: 10px;
     border-radius: 8px;
     background: #121212;
+
+    margin-left: calc(var(--sidebar-width) + 16px);
 }
 
 .header__navigation .navigation {

@@ -1,4 +1,5 @@
 import React from "react";
+import "../variables.css"
 import "./Header.css";
 
 import smallLeft from "../icons/small-left.png";
